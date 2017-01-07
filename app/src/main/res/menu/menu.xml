@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/mostpopuler"
+        android:title="most popular"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/hightrate"
+    android:title="highest rate"
+    android:orderInCategory="100"
+    app:showAsAction="never"/>
+
+    <item android:id="@+id/showallmovies"
+        android:title="show all movies"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>

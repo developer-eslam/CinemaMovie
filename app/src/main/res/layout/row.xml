@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="173dp"
+            android:layout_height="150dp"
+            android:id="@+id/image"
+
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=""
+                android:id="@+id/title"
+                />
+
+
+
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=""
+                android:id="@+id/overview"
+                />
+
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=""
+                android:id="@+id/popularity"
+                />
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=""
+                android:id="@+id/date"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save As Favorite"
+                android:textAllCaps="false"
+                android:id="@+id/save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        >
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/traillers"
+            android:text="Trailer"
+            android:textSize="21dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviews"
+            android:text="Reviews"
+            android:textSize="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/recyclerView2"
+            android:layout_alignStart="@+id/recyclerView2"
+            android:layout_above="@+id/recyclerView2" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/traillers"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="187dp"
+            android:layout_marginStart="187dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

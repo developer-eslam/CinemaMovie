@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movie</string>
+
+    <string name="mostpopuler">most popular</string>
+
+    <string name="hightrate">highest rate</string>
+
+    <string name="show">show all movies</string>
+
+
+</resources>
